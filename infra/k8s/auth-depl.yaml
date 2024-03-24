@@ -14,7 +14,8 @@ spec:
     spec:
       containers:
         - name: auth
-          image: sorhan314/auth
+          image: us.gcr.io/event-ease-418105/auth
+
 ---
 apiVersion: v1
 kind: Service

@@ -5,10 +5,12 @@ deploy:
     manifests:
       - ./infra/k8s/*
 build:
-  local:
-    push: false
+  # local:
+  #   push: false
+  googleCloudBuild:
+    projectId: event-ease-418105
   artifacts:
-    - image: sorhan314/auth
+    - image: us.gcr.io/event-ease-418105/auth
       context: auth
       docker:
         dockerfile: Dockerfile
